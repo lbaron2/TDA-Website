@@ -137,7 +137,7 @@
       </a>
       <hr id=partial-hr-1>
       <br>
-      <p>This is a table that has many of the acronyms that will be used across the CBP projects.</p>
+      <p><a href = "buzz.html">This</a> is a table that has many of the acronyms that will be used across the CBP projects.</p>
     </div>
     <div id = contact-form-email>
       <h1>Contact Form</h1>
@@ -147,13 +147,13 @@
       <div id = "contact-form">
         <form id="form" action="mailto:lbaron@tda.com" method="post" >
           <div id = "name-bar">
-            <input id ="text-bar" type="text" placeholder="Your Name" name="Name" required />
+            <input class ="text-bar" type="text" placeholder="Your Name" name="Name" autocomplete="given-name family-name" required />
           </div>
           <div id = "email-bar" >
-            <input id ="text-bar" type="text" placeholder="Email" name="email" required />
+            <input class ="text-bar" type="text" placeholder="Email" name="email" autocomplete="email" required />
           </div>
           <div id = "message-bar">
-            <textarea  id ="text-bar-large" placeholder="Message" name="Message" required></textarea>
+            <textarea  id ="text-bar-large" placeholder="Message" name="Message" required autocomplete="off"></textarea>
           </div>
           <div id = "date">
             <input name="date" class="visually-hidden" tabindex="-1" autocomplete="off">
