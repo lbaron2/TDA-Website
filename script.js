@@ -1,14 +1,14 @@
-var coll = document.getElementsByClassName("collapsible"); //Grabs all elements with the "collasible" class
+var coll = document.getElementsByClassName("collapsible"); //Grabs all elements with the "collapsible" class
 var navBut = document.getElementById("bar-but"); // Grabs the button in the top left
 var barList = document.getElementById("bar-list") // Grabs the list of links on the nav bar
 var bar = document.getElementById("bar"); //Grabs the too bar
 var i; //Counter Variable
-var countClicks = [0,0,0,0,0]; //Counts clicks for sepereate buttons (sometimes if you click to fast it breaks buttons, so this is my way around it )
+var countClicks = [0,0,0,0,0]; //Counts clicks for separate buttons (sometimes if you click to fast it breaks buttons, so this is my way around it )
 var disWidth = 1350; // Width that the nav bar will be changed at
-var dropDownMenu = false; //Used to stop the dropdown menu disapearing during resizing
+var dropDownMenu = false; //Used to stop the dropdown menu disappearing during resizing
 
 window.addEventListener('resize', topBarChange);  //Runs the top bar change function when the window is resized
-if (window.innerWidth < disWidth){ // Checks what mode the bar should intially be in
+if (window.innerWidth < disWidth){ // Checks what mode the bar should initially be in
   topBarChange()
 }
 for (i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
