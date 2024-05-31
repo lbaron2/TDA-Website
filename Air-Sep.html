@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <title>Air Sepearator &#8211; TDA Research, Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="https://tda.com/wp-content/uploads/2016/06/cropped-TDA-LogoCMYK-01-32x32.png" sizes="32x32">
+</head>
+
+<body>
+  <header id="bar">
+    <a id="tda-logo" href="https://tda.com/"><img id="tda-logo-img" src="https://tda.com/wp-content/uploads/2016/06/TDA-Logo-FONTSCMYK-2.png"></a>
+    <div id = "bar-but">
+      <button onclick="navDropDown()" id = "bar-but-cont">&#8801;</button> </div>
+    <ul id="bar-list">
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/connect/">Connect</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="index.html">Community Benefits</a></li></div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/working-with-tda/">Working With TDA</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-4">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/clients/">Comercial Partners</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/safety-and-regulatory/">Saftey and Regulatory</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/publications/">Publications</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/patents/">Patents</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/products/">Products</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-3">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/chemical-processes/">Chemcial Processes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/emerging-technologies/">Technologies</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-2">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/about-tda/">About TDA</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-1">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/capabilities/">Expertiese</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </ul>  
+    </div>
+    <div id = "drop-down-links">
+        <ul id = "bar-drop-links">
+          <li><a id ="bar-drop-cont" href="https://tda.com/about-tda/">About TDA</a> 
+            <button onclick="subNavDropDown(1)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-1">
+              <li><a id = "sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/emerging-technologies/">Technologies</a>
+            <button onclick="subNavDropDown(2)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-2">
+              <li><a id = "sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/products/">Products</a>
+            <button onclick="subNavDropDown(3)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-3">
+              <li><a id = "sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
+            </ul>
+          </li> 
+          <li><a id ="bar-drop-cont" href="https://tda.com/patents/">Patents</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/publications/">Publications</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/working-with-tda/">Working With TDA</a>
+            <button onclick="subNavDropDown(4)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-4">
+              <li><a id = "sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/clients/">Comercial Partners</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/safety-and-regulatory/">Saftey and Regulatory</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="index.html">Community Benifits</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/connect/">Connect</a> 
+        </ul>
+      </div>
+  </header>
+  <div class="main-content">
+    <div id="pro-title">
+      <h1>Advanced Air Separation Unit (ASU) for Low-Cost H2 Production Via Modular Gasification
+      </h1>
+      <hr id="partial-hr-1">
+      <br>
+      <p class="contract-num">Contract Number
+        : DE-FE0032328</p>
+    </div>
+    <div id="proj-des-n-cbp">
+      <h3>Project Description</h3>
+      <p>The point opf this project is to seperate oxygen from ambeint tempature air to support low cost hydrogen
+        production from the gasification of biomass and/or wastes. You can find more info <a
+          href="https://www.netl.doe.gov/project-information?p=FE0032328">here</a>.</p>
+      <h3>CBP Specifics</h3>
+      <p>TDA participates in the U.S. Department of Energy’s Phase II SBIR/STTR Diversity Supplement program that aims
+        to increase the diversity in the SBIR programs’ participants. The purpose of this program is to improve the
+        diversity of the research workforce by recruiting and supporting undergraduate and graduate students from groups
+        that have been shown to be underrepresented in federal SBIR/STTR research programs. As part of this program TDA
+        has hired a mechanical engineering intern for the summer of 2022 from an ethnic group that is underrepresented
+        in the scientific workforce.</p>
+    </div>
+    <div id="partner-cont">
+      <h3>Our Partners</h3>
+      <ul class="partners">
+        <li class="partners-list"> University of Alberta (U of A)
+          <a href="https://www.ualberta.ca/index.html"><img id="uoa-logo"
+              src="https://www.ualberta.ca/media-library/ualberta/homepage/university-of-alberta-logo.jpg"></a>
+          <br>
+          <p class="partner-des">Dr. Arvind Rajendran, of the University Alberta , is a well-known expert in pressure swing adsorption (PSA) cycle optimization.TDA will work with him to develop and demonstrate the new two-stage high purity oxygen generation process. </p>
+        </li>
+        <br>
+      </ul>
+    </div>
+    <div id="deia-milestones">
+      <h2>DEIA Milestones/Smart Goals</h2>
+      <hr id="partial-hr-1">
+      <br>
+      <table id="smart-id-table">
+        <tr>
+          <th>Smart Goal #</th>
+          <th>Breif Description</th>
+          <th>Metric</th>
+          <th>Success</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Highschool Seminar</td>
+          <td>#
+            of Attendees</td>
+          <td>At least 10 students attend each seminar</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Highschool Intern</td>
+          <td># of undderrepresented candidates in applicant pool</td>
+          <td>Increase # of underrepresented candidates in applicant pool compared to previous intern pools</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>College Seminars</td>
+          <td># of Attendees</td>
+          <td>At least 10 students attend each semniar</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>College Intern</td>
+          <td># of underrepresented candidates in application pool</td>
+          <td>Increase # of underrepresneted candidates in applicant pool compared to previous intern pools</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Society Meeting</td>
+          <td># of Meetings attended</td>
+          <td>Atleast 1 meeting attended</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>DEIA Training at TDA</td>
+          <td># of employees trained</td>
+          <td>At least 5 employees trained</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Instute DEIA trackign & reporting</td>
+          <td>% of staff that is underrepresented and budget</td>
+          <td>>5% of project funds spent on DEIA</td>
+        </tr>
+      </table>
+      <br>
+      <div id = "col-exp">
+        <p>See each goal bellow for more specific description, as well as the current progress of the goal</p>
+      </div>
+      <div id="collap-list">
+        <div id="smart-1">
+          <button type="button" class="collapsible">Smart Goal #1</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>A project member from a group underrepresented in STEM presented a seminar at a local high school.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Arvada West Highschool Seminar</div>
+                  <p>We selected Arvada West High School in nearby Arvada which is located in a disadvantaged community.  The community is disadvantaged due to low income, traffic proximity and volume, proximity to a superfund site, wastewater discharge and lack of high school education</p>
+                  <p>We contacted 2 STEM teachers at Arvada West by email and began corresponding with Serrano Elsa, the STEM teacher at Arvada West.  We initially planned that she would bring 100 students to visit TDA in early April but due to scheduling difficulties we have delayed these seminars to September.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-2">
+          <button type="button" class="collapsible">Smart Goal #2</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>At least one high school student from groups underrepresented in STEM was hired as a facilities intern.
+            </p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title">Job Posting </div>
+                  <p>We listed job postings for an intern:</p>
+                  <ol id ="cur-sub-list">
+                    <li>Summer Pre-STEM Intern (High School)</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-3">
+          <button type="button" class="collapsible">Smart Goal #3</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>A project member from a group underrepresented in STEM organized at least one seminar to share the results of the project, to students at a college or university.</p>
+          </div>
+        </div>
+        <div id="smart-4">
+          <button type="button" class="collapsible">Smart Goal #4</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>At least one graduate or undergraduate student from groups underrepresented in STEM was hired as an intern in this program and setup with a mentor.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Job Postings </div>
+                  <p>We listed job postings for several interns:</p>
+                  <ol id = "cur-sub-list">
+                    <li>Summer Engineering Intern (college)</li>
+                    <li>Summer CAD Intern (college)</li>
+                  </ol>
+                  <p>In addition to our standard websites where we post our job openings, we posted the Summer Engineering Intern on the Society of Hispanic Professional Engineers (SHPE) website found <a href="https://shpe.org/">here</a>. </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-5">
+          <button type="button" class="collapsible">Smart Goal #5</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Results of this project and its DEIA efforts were shared at a meeting of the Society of Hispanic Professional Engineers (SHPE), or the National Society of Black Engineers annual convention</p>
+          </div>
+        </div>
+        <div id="smart-6">
+          <button type="button" class="collapsible">Smart Goal #6</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Project members engaged in a DEIA training seminar sponsored by a nearby DEIA organization.</p>
+          </div>
+        </div>
+        <div id="smart-7">
+          <button type="button" class="collapsible">Smart Goal #7</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>TDA tracked numbers of underrepresented staff members (as a percentage of staff) and funds spent on DEIA
+              training and activities.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Implementing Tracking </div>
+                  <p> We are also tracking the diversity of the applicant pools for interns:</p>
+                  <ol id = "cur-sub-list">
+                    <li>Summer Chemist Intern (2023) – 43% minority and 43% female out of 53 applicants</li>
+                    <li>Summer Engineering Intern (2023) – 54% minority and 25% female out of 59 applicants</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer id="copyright">
+    <div id="copy">
+      Copyright © 2016-2024 All Rights Reserved. |
+      <span style="line-height: 1.5">12345 W. 52nd Avenue, </span>
+      Wheat Ridge, CO 80033-1916
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

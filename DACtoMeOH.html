@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+<head>
+  <title>DAC to MeOH &#8211; TDA Research, Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="https://tda.com/wp-content/uploads/2016/06/cropped-TDA-LogoCMYK-01-32x32.png" sizes="32x32">
+</head>
+
+<body>
+  <header id="bar">
+    <a id="tda-logo" href="https://tda.com/"><img id="tda-logo-img" src="https://tda.com/wp-content/uploads/2016/06/TDA-Logo-FONTSCMYK-2.png"></a>
+    <div id = "bar-but">
+      <button onclick="navDropDown()" id = "bar-but-cont">&#8801;</button> </div>
+    <ul id="bar-list">
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/connect/">Connect</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="index.html">Community Benefits</a></li></div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/working-with-tda/">Working With TDA</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-4">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/clients/">Comercial Partners</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/safety-and-regulatory/">Saftey and Regulatory</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/publications/">Publications</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/patents/">Patents</a></li>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/products/">Products</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-3">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/chemical-processes/">Chemcial Processes</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/emerging-technologies/">Technologies</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-2">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id = "hoverable" >
+        <li><a class="bar-cont" href="https://tda.com/about-tda/">About TDA</a></li>
+        <div class = "hover-sub-menu" id = "hover-sub-menu-1">
+          <ul class = "hover-sub-list">
+            <li><a id = "hover-sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/capabilities/">Expertiese</a></li>
+            <li><a id = "hover-sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </ul>  
+    </div>
+    <div id = "drop-down-links">
+        <ul id = "bar-drop-links">
+          <li><a id ="bar-drop-cont" href="https://tda.com/about-tda/">About TDA</a> 
+            <button onclick="subNavDropDown(1)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-1">
+              <li><a id = "sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/emerging-technologies/">Technologies</a>
+            <button onclick="subNavDropDown(2)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-2">
+              <li><a id = "sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/products/">Products</a>
+            <button onclick="subNavDropDown(3)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-3">
+              <li><a id = "sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
+            </ul>
+          </li> 
+          <li><a id ="bar-drop-cont" href="https://tda.com/patents/">Patents</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/publications/">Publications</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/working-with-tda/">Working With TDA</a>
+            <button onclick="subNavDropDown(4)"id = "sub-drop-down">+</button>
+            <ul class ="sub-list" id = "sub-list-4">
+              <li><a id = "sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/clients/">Comercial Partners</a></li>
+              <li><a id = "sub-cont" href = "https://tda.com/safety-and-regulatory/">Saftey and Regulatory</a></li>
+            </ul>
+          </li>
+          <li><a id ="bar-drop-cont" href="index.html">Community Benifits</a></li>
+          <li><a id ="bar-drop-cont" href="https://tda.com/connect/">Connect</a> 
+        </ul>
+      </div>
+  </header>
+  <div class="main-content">
+    <div id="pro-title">
+      <h1>Efficient Integrated Methanol Synthesis Using Carbon from Direct Air Capture
+      </h1>
+      <hr id="partial-hr-1">
+      <br>
+      <p class="contract-num">Contract Number
+        : DE-FE0032400</p>
+    </div>
+    <div id="proj-des-n-cbp">
+      <h3>Project Description</h3>
+      <p>The goal of this project is to take the CO2 gathered from other DAC projects, and utilize it. This is done by
+        using a renewable source of H2 and CO2 from the other DAC projects to synthisize it into MeOH Methanol. You can
+        find more info <a href="https://www.netl.doe.gov/project-information?p=FE0032400">here</a>.</p>
+      <h3>Justice 40 Specifics</h3>
+      <p>The Justice 40 initiative is a federal intiative that gives 40% of the benifits of federal investments to
+        disadvantaged communities. You can find more info <a
+          href="https://www.whitehouse.gov/omb/briefing-room/2021/07/20/the-path-to-achieving-justice40/">here</a>.</p>
+      <h3>CBP Specifics</h3>
+      <p>TDA participates in the U.S. Department of Energy’s Phase II SBIR/STTR Diversity Supplement program that aims
+        to increase the diversity in the SBIR programs’ participants. The purpose of this program is to improve the
+        diversity of the research workforce by recruiting and supporting undergraduate and graduate students from groups
+        that have been shown to be underrepresented in federal SBIR/STTR research programs. As part of this program TDA
+        has hired a mechanical engineering intern for the summer of 2022 from an ethnic group that is underrepresented
+        in the scientific workforce.</p>
+    </div>
+    <div id="partner-cont">
+      <h3>Our Partners</h3>
+      <ul class="partners">
+        <li class="partners-list">SLB
+          <a href="https://www.slb.com/"><img id="slb-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/SLB_Logo_2022.svg/768px-SLB_Logo_2022.svg.png?20221025102909"></a>
+          <br>
+          <p class="partner-des">SLB is advancing their New Energy portfolio, which consists of new businesses in
+            low-carbon and carbon-neutral energy technologies; they announced a commitment to be net zero by 2050. They
+            are building partnerships to help other industries reduce their emissions. Decarbonization across the
+            industry includes reducing emissions from oil and gas operations, electrification of infrastructure and
+            reducing or eliminating flaring.</p>
+        </li>
+        <li class="partners-list">
+          Verde Clean Fuels
+          <a href="https://www.verdecleanfuels.com/"><img id="verde-logo"
+              src="https://www.verdecleanfuels.com/assets/OG/verde-clean-energy.png"></a>
+          <br>
+          <p class="partner-des">Verde is dedicated to producing green transportation fuels (initially from waste- and
+            bio-based syngas production). Their STG+ technology turns renewable feedstocks into finished drop-in fuel
+            that requires no additional refining. In addition, they have a technology that reduces gas flaring by
+            turning natural gas and flare gas into liquid fuels. They have experience with assessing the project impacts
+            on the community and adverse effects on human beings. This includes identifying significant effects of the
+            project and mitigating or avoiding these effects where feasible
+          </p>
+        </li>
+        <br>
+      </ul>
+    </div>
+    <div id="deia-milestones">
+      <h2>DEIA Milestones/Smart Goals</h2>
+      <hr id="partial-hr-1">
+      <br>
+      <table id="smart-id-table">
+        <tr>
+          <th>Smart Goal #</th>
+          <th>Breif Description</th>
+          <th>Metric</th>
+          <th>Success</th>
+        </tr>
+        <tr>
+          <td>DEIA 1</td>
+          <td>College Seminar</td>
+          <td># of Attendees</td>
+          <td>At least 10 students attend each seminar</td>
+        </tr>
+        <tr>
+          <td>DEIA 2</td>
+          <td>College Interns</td>
+          <td># of underrepresented candidates in applicant pool</td>
+          <td>Increase number of underrepresented candidates in applicant pool by at least 3 from previous applicant
+            pools</td>
+        </tr>
+        <tr>
+          <td>DEIA 3</td>
+          <td>Track DEIA</td>
+          <td># of project managers who undergo DEIA traning</td>
+          <td>At least 10 students attend each seminar</td>
+        </tr>
+        <tr>
+          <td>J40I 4</td>
+          <td>Project Benefits and Disadvantages</td>
+          <td># of benifits/downsides identified</td>
+          <td>At least 5 in total identified</td>
+        </tr>
+        <tr>
+          <td>CSE 5</td>
+          <td>Identifiy Stakeholders</td>
+          <td># of stakeholders identified</td>
+          <td>At least 5 in total identified</td>
+        </tr>
+        <tr>
+          <td>QJ 6</td>
+          <td>Promoted Professional development</td>
+          <td># of project mebers utilizing TDA's professional development fund</td>
+          <td>At least 2 project members utilize the fund
+          <td>
+        </tr>
+      </table>
+      <br>
+      <div id = "col-exp">
+        <p>See each goal bellow for more specific description, as well as the current progress of the goal.</p>
+      </div>
+      <div id="collap-list">
+        <div id="smart-1">
+          <button type="button" class="collapsible">Smart Goal #1</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>There will be at least one seminar talking about the results of the project to College students in Colorado.</p>
+            
+          </div>
+        </div>
+        <div id="smart-2">
+          <button type="button" class="collapsible">Smart Goal #2</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>At least one college student from underrepresented groups in STEM at will be an intern/employee for this
+              project.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Job Postings </div>
+                  <p>We listed job postings for several interns:</p>
+                  <ol id = "cur-sub-list">
+                    <li>Summer Engineering Intern (college)</li>
+                    <li>Summer CAD Intern (college)</li>
+                  </ol>
+                  <p>In addition to our standard websites where we post our job openings, we posted the Summer Engineering Intern on the Society of Hispanic Professional Engineers (SHPE) website found <a href="https://shpe.org/">here</a>. </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-3">
+          <button type="button" class="collapsible">Smart Goal #3</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Track the percentage of underrepresented staff and funds spend on DEIA training.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Implementing Tracking </div>
+                  <p>For the DEIA Plan, we began tracking diversity of the current staff here at TDA: (TDA currently has 126 people on staff) </p>
+                  <ol id = "cur-sub-list">
+                    <li> 14% minority</li>
+                    <li> 26% female</li>
+                    <li>4 veterans and 3 personnel have self-identified with a disability</li>
+                  </ol>
+                  <p>We are in the process of adding tracking for labor and expenses spent on the DEIA activities by adding separate charge codes for these activities</p>
+                  <p> We are also tracking the diversity of the applicant pools for interns:</p>
+                  <ol id = "cur-sub-list">
+                    <li>Summer Chemist Intern (2023) – 43% minority and 43% female out of 53 applicants</li>
+                    <li>Summer Engineering Intern (2023) – 54% minority and 25% female out of 59 applicants</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-4">
+          <button type="button" class="collapsible">Smart Goal #4</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Determine the positive and negative effects that this project would have on the surrounding area that it
+              is implemented into.</p>
+              <div id = "cur-prog-cont">
+                <ul id="cur-prog-list">
+                  <li>
+                    <div id="cur-act-title"> Benefits and Possible Downsides </div>
+                    <p>Postive: A Reduction in C02 Levels</p>
+                    <p>Negative: A possible leak of Methanol</p>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div id="smart-5">
+          <button type="button" class="collapsible">Smart Goal #5</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Identify the stakeholders of the comunity that the project will be implemented into.</p>
+            <h4>Current Progress</h4>
+            <div id = "cur-prog-cont">
+              <ul id="cur-prog-list">
+                <li>
+                  <div id="cur-act-title"> Indentified Stakeholders</div>
+                  <table id = "stakeholders-table">
+                    <tr>
+                      <th>Stakeholders</th>
+                      <th>Sector</th>
+                      <th>Level of Engagment</th>
+                    </tr>
+                    <tr>
+                      <td>Nearby HOAs</td>
+                      <td>Concerned member of public</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Nearby low income housing</td>
+                      <td>Disadvantaged communities</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Nearby businesses</td>
+                      <td>Buisness</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Nearby Schools</td>
+                      <td>Education</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Colorado Community Coleges and Universities</td>
+                      <td>Education</td>
+                      <td>Advisory Commitee</td>
+                    </tr>
+                    <tr>
+                      <td>City of Golden - Mayor's Office</td>
+                      <td>Government</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>City of Goldenn - Parks and Open Spaces</td>
+                      <td>Government</td>
+                      <td>Working group member</td>
+                    <tr>
+                      <td>Golden Planing Division</td>
+                      <td>Community Planning</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Jefferson County Colorado Public Health</td>
+                      <td>Public Health and Saftey</td>
+                      <td>Working group member</td>
+                    </tr>
+                    <tr>
+                      <td>State of Colorado - Governer's Office</td>
+                      <td>Government</td>
+                      <td>Working group member</td>
+                    </tr>
+                    <tr>
+                      <td>Federal Senator and Representative's Office</td>
+                      <td>Government</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Technical experts</td>
+                      <td>Industry</td>
+                      <td>Working group member</td>
+                    </tr>
+                    <tr>
+                      <td>SLB</td>
+                      <td>Industry</td>
+                      <td>Advisory Commitee</td>
+                    </tr>
+                    <tr>
+                      <td>Unions</td>
+                      <td>Industry</td>
+                      <td>Working group member</td>
+                    </tr>
+                    <tr>
+                      <td>Enviornmental Groups</td>
+                      <td>Enviornmental NGOs</td>
+                      <td>Working group member</td>
+                    </tr>
+                    <tr>
+                      <td>SPARCC</td>
+                      <td>Community Planning</td>
+                      <td>Advisory Commitee</td>
+                    </tr>
+                    <tr>
+                      <td>Tribal Leaders</td>
+                      <td>Tribal communities</td>
+                      <td>Active public participant</td>
+                    </tr>
+                    <tr>
+                      <td>Colorado Public</td>
+                      <td>Concerned member of public</td>
+                      <td>Active public participant</td>
+                    </tr>
+                  </table>
+                </li>
+                <li>
+                  <div id = "cur-act-title">This Website</div>
+                  <p>This website is ment to detail all of the CBP and their details. On the <a href = "index.html">main page</a>, there is also a survey for feedback!</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="smart-6">
+          <button type="button" class="collapsible">Smart Goal #6</button>
+          <div class="col-cont">
+            <h4>Goal Description</h4>
+            <p>Train, retain, and attract skilled and or well-qualified workers through the use of TDA's professional
+              development fund.</p>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <footer id="copyright">
+    <div id="copy">
+      Copyright © 2016-2024 All Rights Reserved. |
+      <span style="line-height: 1.5">12345 W. 52nd Avenue, </span>
+      Wheat Ridge, CO 80033-1916
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

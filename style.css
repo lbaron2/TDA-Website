@@ -1,0 +1,480 @@
+/*SETUP*/
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: black;
+  display: grid;
+  flex-direction: column;
+  min-height: 100vh;
+  scroll-behavior:smooth;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.main-content{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#end {
+  position: relative;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 25;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 25;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 25;
+}
+.contract-num {
+  color: #000000;
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+}
+#partial-hr-1 {
+  width: 5%;
+  height: 1px;
+  background-color: #1c75bc;
+  border: #1c75bc;
+  float: left;
+  position: relative;
+  top: -20px;
+}
+#pro-title {
+  position: relative;
+}
+
+#proj-des-n-cbp {
+  position: relative;
+  top: -30px;
+  display: block;
+}
+.deia-goals {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.contract-num {
+  color: #000000;
+  font-size: 20px;
+  position: relative;
+  top: -40px;
+}
+/*Nav Bar*/
+#bar {
+  background-color: #1e164b;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  line-height: 100px;
+  transition: all 1s ease;
+}
+
+#bar-list {
+  list-style-type: none;
+  position: relative;
+  bottom: 15px;
+}
+.bar-cont {
+  float: right;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 60px;
+  z-index: 10;
+}
+#bar-but{
+  float:right;
+  position: relative;
+  left:10px;
+  top:10px;
+  margin: 10px 40px 0px 0px;
+  display: none;
+  list-style-type: none;
+}
+#bar-but-cont{
+  background-color: #1e164b;
+  color: white;
+  font-size: 50px;
+  border:none;
+  display:block;
+  cursor:pointer;
+}
+#bar-drop-links{
+  list-style-type: none;
+  margin-top: 100px;
+  display: none;
+  text-align: center;
+  line-height: 80px;
+}
+#bar-drop-cont{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size:26px;
+  line-height: 80px;
+}
+
+.bar-cont:hover, #bar-drop-cont:hover ,#sub-drop-down:hover, #sub-cont:hover, #hover-sub-cont:hover{
+  color: #076ba7;
+}
+
+#tda-logo {
+  position: absolute;
+  top: 20%;
+  left:40px;
+}
+
+#tda-logo-img {
+  height: 50px;
+  width: auto;
+}
+/* Nav Sub Menus */
+#sub-drop-down{
+  color: white;
+  background-color: #1e164b;
+  border: none;
+  font-size: 26px;
+  font-weight: 10px;
+  cursor:pointer;
+}
+.sub-list{
+  color:white;
+  list-style: none;
+  line-height: 50px;
+}
+#sub-cont{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.hover-sub-menu{
+  height: 0px;
+  width: 0px;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  background-color:#1e164b;
+  display: none;
+  padding-bottom: 15px;
+  float: right;
+  position: relative;
+  top:80px;
+  left:100px;
+  z-index: 5;
+}
+#hoverable:hover .hover-sub-menu{
+  padding-top: 20px;
+  height: auto;
+  width: 200px;
+  display: block;
+}
+.hover-sub-list{
+  list-style: none;
+  line-height: 50px;
+}
+#hover-sub-cont{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+#hover-sub-menu-1{
+  position: absolute;
+  left:300px;
+  top:99px;
+}
+#hover-sub-menu-2{
+  position: absolute;
+  left:500px;
+  top:99px;
+}
+#hover-sub-menu-3{
+  position: absolute;
+  left:600px;
+  top:99px;
+}
+#hover-sub-menu-4{
+  position: absolute;
+  left:1000px;
+  top:99px;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  height: 202px;
+  background-color: #f6f7f8;
+  position: relative;
+  display:inline-block;
+  top: 250px;
+  
+}
+#copy {
+  text-align: center;
+  position: relative;
+  top: 57px;
+  left: 7px;
+  font-size: 13px;
+  max-width: none;
+  color: #999;
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+#copy:before{
+  content: "";
+  border-bottom: 1px solid;
+  border-color:  #d5d5d5;
+  display: block;
+  background-color: #f6f7f8;
+  position: relative;
+  margin:auto;
+  margin-top: 35px;
+  margin-bottom:30px;
+  width: 360px;
+}
+/*Project List*/
+.pro-link {
+  color: black;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.pro-link:hover {
+  color: #076ba7;
+}
+
+#pro-list {
+  list-style-type: circle;
+  vertical-align: middle;
+}
+/*Partners*/
+.partners {
+  font-size: 26px;
+  list-style-type: circle;
+  text-align: left;
+}
+
+.partners-list {
+  margin-bottom: 50px;
+}
+
+.partner-des {
+  font-size: 20px;
+  font-weight: 10;
+}
+#slb-logo {
+  width: 60px;
+  height: auto;
+}
+
+#must-logo {
+  width: 60px;
+  height: auto;
+  position: relative;
+  top:20px
+}
+
+#gev-logo {
+  width: auto;
+  height: 40px;
+}
+
+#verde-logo {
+  width: auto;
+  height: 40px;
+}
+
+#uoa-logo {
+  width: auto;
+  height: 60px;
+}
+
+/*DEAI Table*/
+table {
+  border: 1px solid black;
+  width: 80%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #afcfe9;
+}
+
+tr:first-child {
+  background-color: #e2dfdf;
+}
+
+tr, th {
+  border-bottom: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  min-height: 50px;
+}
+
+td {
+  font-size: 16;
+  font-weight: 20;
+}
+
+th {
+  font-size: 20;
+  font-style: bold;
+}
+
+/* Acronym Table Page */
+#buzz-title {
+  text-decoration: none;
+  color: black
+}
+
+#buzz-title:hover {
+  color: #076ba7;
+}
+
+#buzz-tb {
+  width: 400px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+
+/* Current Progress Bars */
+#cur-prog-list {
+    list-style-image: url("blueBullet.png");
+    position: relative;
+    right:10px;
+}
+#cur-prog-cont{
+  position: relative;
+  left:20px;
+  border-left: 5px solid #1e164b;
+}
+#cur-act-title{
+  position: relative;
+  bottom:20px;
+}
+.collapsible {
+  background-color: #1e164b;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: #40309c;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  float: right;
+  margin-left: 5px; 
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.col-cont {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-width: none;
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+}
+#cur-sub-list{
+  list-style: block;
+}
+#stakeholders-table{
+  text-align: center;
+  line-height: 40px;
+  width: 60%;
+
+}
+#stakeholders-{
+  text-align: center;
+}
+
+
+/* Contact Form */
+#contact-cbp-cont{
+  float:right;
+  padding-left: 10px;
+  background-color:#d5d5d5;
+  border-radius: 25px;
+  line-height: 40px;
+}
+#contact-cbp-top-text{
+  position: relative;
+  top:10px;
+}
+#contact-form{
+  background-color: #d5d5d5;
+  padding-top: 20px;
+  padding: 10px;
+}
+#text-bar{
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+#text-bar-large{
+  max-width: 600px;
+  min-width: 300px;
+  min-height: 50px;
+  max-height: 600px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: Arial;
+  position:relative;
+  right:10px;
+}
+#sub-but{
+  border: none;
+  background-color: #1e164b;
+  color: white;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 30px;
+  min-width: 50px;
+  cursor: pointer;
+}
+#sub-but:hover{
+  background-color: #40309c;
+}
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+}
