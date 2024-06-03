@@ -4,15 +4,34 @@
         "Arvind",
         "boogaloo",
         "Collapsibles",
+        "DACUS",
         "Decarbonization",
         "DEIA",
+        "feedstocks",
         "Gasification",
         "hoverable",
+        "NGOs",
         "NSBE",
         "Rajendran",
         "RSTA",
+        "RTSA",
         "SBIR",
         "SHPE",
-        "STTR"
+        "sorbent",
+        "SPARCC",
+        "STTR",
+        "syngas"
+    ],
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ],
+    "cSpell.ignoreWords": [
+        "collap"
     ]
 }

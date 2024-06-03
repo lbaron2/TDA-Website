@@ -452,6 +452,8 @@ th {
 }
 #text-bar-large{
   width: 95%;
+  max-width: 95%;
+  min-width: 30%;
   min-height: 50px;
   max-height: 600px;
   margin-left: 10px;
