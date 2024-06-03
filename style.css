@@ -119,6 +119,7 @@ h3 {
   display: none;
   text-align: center;
   line-height: 80px;
+  overflow-y: scroll;
 }
 #bar-drop-cont{
   color: white;
