@@ -49,6 +49,12 @@ h3 {
   position: relative;
   top: -20px;
 }
+#hidden-hr{
+  line-height: 3px;
+  height: 2px;
+  margin-bottom: -1px;
+  visibility: hidden;
+}
 #pro-title {
   position: relative;
 }
@@ -250,14 +256,16 @@ footer {
   font-size: 26px;
   text-decoration: none;
 }
-
 .pro-link:hover {
   color: #076ba7;
 }
 
 #pro-list {
-  list-style-type: circle;
+  list-style-type: none;
   vertical-align: middle;
+}
+#pro-list li{
+  margin-bottom: 15px;
 }
 /*Partners*/
 .partners {
@@ -430,20 +438,20 @@ th {
   position: relative;
   top:10px;
 }
-#contact-form{
+#form{
   background-color: #d5d5d5;
   padding-top: 20px;
   padding: 10px;
+  width: 55%;
 }
 .text-bar{
-  width: 300px;
+  width: 95%;
   height: 40px;
   margin-bottom: 10px;
   font-size: 16px;
 }
 #text-bar-large{
-  max-width: 600px;
-  min-width: 300px;
+  width: 95%;
   min-height: 50px;
   max-height: 600px;
   margin-left: 10px;

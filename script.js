@@ -25,7 +25,7 @@ for (i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
 }
 function navDropDown(){ //Changes all of the elements that have to do with the nav bar dropping down
   if (countClicks[0] % 2 == 0){ //Activates Dropdown
-    bar.style.height = 100 + "vh";
+    bar.style.height = 100 + "%";
     document.getElementById("tda-logo").style.display = "none";
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
