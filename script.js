@@ -25,7 +25,7 @@ for (i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
 }
 function navDropDown(){ //Changes all of the elements that have to do with the nav bar dropping down
   if (countClicks[0] % 2 == 0){ //Activates Dropdown
-    bar.style.height = 100 + "%";
+    bar.style.height = window.innerHeight + "px";
     document.getElementById("tda-logo").style.display = "none";
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
@@ -37,7 +37,7 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
     dropDownMenu = true;
   }
   else if (countClicks[0] % 2 == 1){//Deactivates Dropdown
-    bar.style.height = 100 + "px";
+    bar.style.height =  100 + "px";
     document.getElementById("tda-logo").style.display = "";
     document.getElementById("copyright").style.display = "";
     document.getElementById("bar-but-cont").innerHTML = "&#8801;";
