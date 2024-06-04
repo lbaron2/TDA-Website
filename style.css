@@ -87,7 +87,6 @@ h3 {
   z-index: 1000;
   line-height: 100px;
   transition: all 1s ease;
-  
 }
 
 #bar-list {
@@ -493,5 +492,28 @@ th {
 @media screen and (max-width: 600px) {
   .collapsible{
     font-size: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  #cur-act-title{
+    font-size: 22px;
+  }
+  #cur-sub-list{
+    font-size: 20px;
+  }
+  h4{
+    font-size: 24px;
+  }
+  td{
+    font-size: 18px;
+  }
+}
+@media screen and (max-height: 750px) {
+  .bar-cont{
+    line-height: 50px;
+  }
+  #bar{
+    overflow-y:scroll;
   }
 }
