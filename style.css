@@ -372,9 +372,19 @@ th {
   left:20px;
   border-left: 5px solid #1e164b;
 }
-#cur-act-title{
+.cur-prog-title{
   position: relative;
-  bottom:20px;
+}
+.fox-shifted-1{
+  bottom: 25px;
+  padding-top:20px;
+}
+.fox-shifted-2{
+  padding-top:30px;
+}
+.cur-act-title{
+  position: relative;
+  bottom: 20px;
 }
 .collapsible {
   background-color: #1e164b;

@@ -7,6 +7,19 @@ var countClicks = [0,0,0,0,0]; //Counts clicks for separate buttons (sometimes i
 var disWidth = 1350; // Width that the nav bar will be changed at
 var dropDownMenu = false; //Used to stop the dropdown menu disappearing during resizing
 
+if(navigator.userAgent.includes("Firefox")){
+  var elements = document.querySelectorAll('.cur-prog-title');
+  elements.forEach(element => {
+    element.classList.add("fox-shifted-1")
+  });
+  elements = document.querySelectorAll('.cur-act-title');
+  elements.forEach(element => {
+    element.classList.add("fox-shifted-2")
+  });
+    
+}
+console.log(navigator.userAgent.includes("Firefox"));
+console.log(navigator.userAgent);
 window.addEventListener('resize', topBarChange);  //Runs the top bar change function when the window is resized
 if (window.innerWidth < disWidth){ // Checks what mode the bar should initially be in
   topBarChange()
@@ -35,6 +48,7 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
     document.getElementById("sub-list-3").style.display = "none";
     document.getElementById("sub-list-4").style.display = "none";
     dropDownMenu = true;
+    console.log(navigator.userAgent)
   }
   else if (countClicks[0] % 2 == 1){//Deactivates Dropdown
     bar.style.height =  100 + "px";
