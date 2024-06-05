@@ -18,8 +18,7 @@ if(navigator.userAgent.includes("Firefox")){
   });
     
 }
-console.log(navigator.userAgent.includes("Firefox"));
-console.log(navigator.userAgent);
+
 window.addEventListener('resize', topBarChange);  //Runs the top bar change function when the window is resized
 if (window.innerWidth < disWidth){ // Checks what mode the bar should initially be in
   topBarChange()
