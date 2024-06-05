@@ -424,7 +424,17 @@ th {
 #stakeholders-{
   text-align: center;
 }
-
+.table-sub-list{
+  list-style: none;
+  position: relative;
+  left:-20px;
+}
+.table-sub-list tr{
+  border-right: 1px solid black;
+}
+.table-sub-cont{
+  line-height: 20px;
+}
 
 /* Contact Form */
 #contact-cbp-cont{
