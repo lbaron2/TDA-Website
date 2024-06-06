@@ -7,16 +7,15 @@ var countClicks = [0,0,0,0,0]; //Counts clicks for separate buttons (sometimes i
 var disWidth = 1350; // Width that the nav bar will be changed at
 var dropDownMenu = false; //Used to stop the dropdown menu disappearing during resizing
 
-if(navigator.userAgent.includes("Firefox")){
-  var elements = document.querySelectorAll('.cur-prog-title');
+if(navigator.userAgent.includes("Firefox")){ // Checks if the browser is Firefox (not entirely reliable as people can get around it if they want)
+  var elements = document.querySelectorAll('.cur-prog-title'); //Changes position of the words "current progress"
   elements.forEach(element => {
     element.classList.add("fox-shifted-1")
   });
-  elements = document.querySelectorAll('.cur-act-title');
+  elements = document.querySelectorAll('.cur-act-title'); // Changes position of the current step in the goals
   elements.forEach(element => {
     element.classList.add("fox-shifted-2")
   });
-    
 }
 
 window.addEventListener('resize', topBarChange);  //Runs the top bar change function when the window is resized
