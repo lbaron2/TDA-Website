@@ -285,6 +285,8 @@ footer {
 #slb-logo {
   width: 60px;
   height: auto;
+  position: relative;
+  top:10px;
 }
 
 #must-logo {
@@ -297,18 +299,47 @@ footer {
 #gev-logo {
   width: auto;
   height: 40px;
+  position: relative;
+  top:10px;
 }
 
 #verde-logo {
   width: auto;
   height: 40px;
+  position: relative;
+  top:10px;
 }
 
 #uoa-logo {
   width: auto;
   height: 60px;
+  position: relative;
+  top:20px;
 }
-
+#ITC-logo{
+  width: auto;
+  height: 60px;
+  position: relative;
+  top:20px;
+}
+#UWYO-logo{
+  width:auto;
+  height: 60px;
+  position: relative;
+  top:20px;
+}
+#UCD-logo{
+  width:auto;
+  height: 60px;
+  position: relative;
+  top:20px;
+}
+#G2R-logo{
+  width:auto;
+  height: 60px;
+  position: relative;
+  top:20px;
+}
 /*DEIA Table*/
 table {
   border: 1px solid black;
