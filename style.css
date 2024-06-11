@@ -564,7 +564,4 @@ th {
   .bar-cont{
     line-height: 50px;
   }
-  #bar{
-    overflow-y:scroll;
-  }
 }
