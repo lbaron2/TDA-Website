@@ -40,7 +40,7 @@ h3 {
   position: relative;
   top: -40px;
 }
-#partial-hr-1 {
+.partial-hr-1 {
   width: 5%;
   height: 1px;
   background-color: #1c75bc;
@@ -49,7 +49,7 @@ h3 {
   position: relative;
   top: -20px;
 }
-#hidden-hr{
+.hidden-hr{
   line-height: 3px;
   height: 2px;
   margin-bottom: -1px;
@@ -126,7 +126,7 @@ h3 {
   text-align: center;
   line-height: 5%;
 }
-#bar-drop-cont{
+.bar-drop-cont{
   color: white;
   text-decoration: none;
   text-align: center;
@@ -134,7 +134,7 @@ h3 {
   line-height: 80px;
 }
 
-.bar-cont:hover, #bar-drop-cont:hover ,#sub-drop-down:hover, #sub-cont:hover, #hover-sub-cont:hover{
+.bar-cont:hover, #bar-drop-cont:hover ,.sub-drop-down:hover, .sub-cont:hover, .hover-sub-cont:hover{
   color: #076ba7;
 }
 
@@ -149,7 +149,7 @@ h3 {
   width: auto;
 }
 /* Nav Sub Menus */
-#sub-drop-down{
+.sub-drop-down{
   color: white;
   background-color: #1e164b;
   border: none;
@@ -162,7 +162,7 @@ h3 {
   list-style: none;
   line-height: 50px;
 }
-#sub-cont{
+.sub-cont{
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -181,7 +181,7 @@ h3 {
   left:100px;
   z-index: 5;
 }
-#hoverable:hover .hover-sub-menu{
+.hoverable:hover .hover-sub-menu{
   padding-top: 20px;
   height: auto;
   width: 200px;
@@ -191,7 +191,7 @@ h3 {
   list-style: none;
   line-height: 50px;
 }
-#hover-sub-cont{
+.hover-sub-cont{
   color: white;
   text-decoration: none;
   font-size: 12px;
@@ -224,7 +224,6 @@ footer {
   position: relative;
   display:inline-block;
   top: 250px;
-  
 }
 #copy {
   text-align: center;
@@ -249,6 +248,9 @@ footer {
   margin-top: 35px;
   margin-bottom:30px;
   width: 360px;
+}
+#line-bot{
+  line-height: 1.5;
 }
 /*Project List*/
 .pro-link {
@@ -393,12 +395,12 @@ th {
 
 
 /* Current Progress Bars */
-#cur-prog-list {
+.cur-prog-list {
     list-style-image: url("blueBullet.png");
     position: relative;
     right:10px;
 }
-#cur-prog-cont{
+.cur-prog-cont{
   position: relative;
   left:20px;
   border-left: 5px solid #1e164b;
@@ -453,7 +455,7 @@ th {
   max-height: 0px;
   transition: max-height 0.2s ease-out;
 }
-#cur-sub-list{
+.cur-sub-list{
   list-style: block;
 }
 #stakeholders-table{
@@ -550,7 +552,7 @@ th {
   #cur-act-title{
     font-size: 22px;
   }
-  #cur-sub-list{
+  .cur-sub-list{
     font-size: 20px;
   }
   h4{

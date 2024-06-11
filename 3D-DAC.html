@@ -1,114 +1,115 @@
 <!DOCTYPE html>
-<htm lang="en-US">
-<link href="style.css" rel="stylesheet" type="text/css" />
+<html lang="en-US">
 
 <head>
   <meta charset="utf-8">
   <title>3D Printed DAC &#8211; TDA Research, Inc.</title>
   <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="icon" href="https://tda.com/wp-content/uploads/2016/06/cropped-TDA-LogoCMYK-01-32x32.png" sizes="32x32">
 </head>
 
 <body>
   <header id="bar">
-    <a id="tda-logo" href="https://tda.com/"><img id="tda-logo-img" src="https://tda.com/wp-content/uploads/2016/06/TDA-Logo-FONTSCMYK-2.png"></a>
+    <a id="tda-logo" href="https://tda.com/"><img id="tda-logo-img" alt = "TDA Logo" src="https://tda.com/wp-content/uploads/2016/06/TDA-Logo-FONTSCMYK-2.png"></a>
     <div id = "bar-but">
-      <button type="button" onclick="navDropDown()" id = "bar-but-cont">&#8801;</button>
+      <button type="button" onclick="navDropDown()" id = "bar-but-cont">&#8801;</button> 
     </div>
     <ul id="bar-list">
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/connect/">Connect</a></li>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="index.html">Community Benefits</a></li></div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/working-with-tda/">Working With TDA</a></li>
+      <li class =  "hoverable" >
+        <div class =  "hoverable"><a class="bar-cont" href="https://tda.com/connect/">Connect</a></div>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="index.html">Community Benefits</a></div>
+      </li>
+      <li class =  "hoverable" >
+      <li><a class="bar-cont" href="https://tda.com/working-with-tda/">Working With TDA</a>
         <div class = "hover-sub-menu" id = "hover-sub-menu-4">
           <ul class = "hover-sub-list">
-            <li><a id = "hover-sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/clients/">Commercial Partners</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/safety-and-regulatory/">Safety and Regulatory</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/clients/">Commercial Partners</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/safety-and-regulatory/">Safety and Regulatory</a></li>
           </ul>
         </div>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/publications/">Publications</a></li>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/patents/">Patents</a></li>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/products/">Products</a></li>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="https://tda.com/publications/">Publications</a></div>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="https://tda.com/patents/">Patents</a></div>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="https://tda.com/products/">Products</a></div>
         <div class = "hover-sub-menu" id = "hover-sub-menu-3">
           <ul class = "hover-sub-list">
-            <li><a id = "hover-sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
           </ul>
         </div>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/emerging-technologies/">Technologies</a></li>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="https://tda.com/emerging-technologies/">Technologies</a></div>
         <div class = "hover-sub-menu" id = "hover-sub-menu-2">
           <ul class = "hover-sub-list">
-            <li><a id = "hover-sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
           </ul>
         </div>
-      </div>
-      <div id = "hoverable" >
-        <li><a class="bar-cont" href="https://tda.com/about-tda/">About TDA</a></li>
+      </li>
+      <li class =  "hoverable" >
+        <div><a class="bar-cont" href="https://tda.com/about-tda/">About TDA</a></div>
         <div class = "hover-sub-menu" id = "hover-sub-menu-1">
           <ul class = "hover-sub-list">
-            <li><a id = "hover-sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
-            <li><a id = "hover-sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
+            <li><a class = "hover-sub-cont" href = "https://tda.com/careers/">Careers</a></li>
           </ul>
         </div>
-      </div>
+      </li>
     </ul>  
     <div id = "drop-down-links">
         <ul id = "bar-drop-links">
-          <li><a id ="bar-drop-cont" href="https://tda.com/about-tda/">About TDA</a> 
-            <button type="button" onclick="subNavDropDown(1)"id = "sub-drop-down">+</button>
+          <li><a class = "bar-drop-cont" href="https://tda.com/about-tda/">About TDA</a> 
+            <button type="button" onclick="subNavDropDown(1)"class = "sub-drop-down">+</button>
             <ul class ="sub-list" id = "sub-list-1">
-              <li><a id = "sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/careers/">Careers</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/tda-approach/">TDA Approach</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/capabilities/">Expertise</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/careers/">Careers</a></li>
             </ul>
           </li>
-          <li><a id ="bar-drop-cont" href="https://tda.com/emerging-technologies/">Technologies</a>
-            <button type="button" onclick="subNavDropDown(2)"id = "sub-drop-down">+</button>
+          <li><a class = "bar-drop-cont" href="https://tda.com/emerging-technologies/">Technologies</a>
+            <button type="button" onclick="subNavDropDown(2)"class = "sub-drop-down">+</button>
             <ul class ="sub-list" id = "sub-list-2">
-              <li><a id = "sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/emerging-technologies-2/">Emerging Technologies</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/markets-and-applications/">Markets and Applications</a></li>
             </ul>
           </li>
-          <li><a id ="bar-drop-cont" href="https://tda.com/products/">Products</a>
-            <button type="button" onclick="subNavDropDown(3)"id = "sub-drop-down">+</button>
+          <li><a class = "bar-drop-cont" href="https://tda.com/products/">Products</a>
+            <button type="button" onclick="subNavDropDown(3)"class = "sub-drop-down">+</button>
             <ul class ="sub-list" id = "sub-list-3">
-              <li><a id = "sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/product-customers/">Commercial Products</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/chemical-processes/">Chemical Processes</a></li>
             </ul>
           </li> 
-          <li><a id ="bar-drop-cont" href="https://tda.com/patents/">Patents</a></li>
-          <li><a id ="bar-drop-cont" href="https://tda.com/publications/">Publications</a></li>
-          <li><a id ="bar-drop-cont" href="https://tda.com/working-with-tda/">Working With TDA</a>
-            <button type="button" onclick="subNavDropDown(4)"id = "sub-drop-down">+</button>
+          <li><a class = "bar-drop-cont" href="https://tda.com/patents/">Patents</a></li>
+          <li><a class = "bar-drop-cont" href="https://tda.com/publications/">Publications</a></li>
+          <li><a class = "bar-drop-cont" href="https://tda.com/working-with-tda/">Working With TDA</a>
+            <button type="button" onclick="subNavDropDown(4)"class = "sub-drop-down">+</button>
             <ul class ="sub-list" id = "sub-list-4">
-              <li><a id = "sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/clients/">Commercial Partners</a></li>
-              <li><a id = "sub-cont" href = "https://tda.com/safety-and-regulatory/">Safety and Regulatory</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/contracting/">Government Contracting</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/clients/">Commercial Partners</a></li>
+              <li><a class = "sub-cont" href = "https://tda.com/safety-and-regulatory/">Safety and Regulatory</a></li>
             </ul>
           </li>
-          <li><a id ="bar-drop-cont" href="index.html">Community Benefits</a></li>
-          <li><a id ="bar-drop-cont" href="https://tda.com/connect/">Connect</a> 
+          <li><a class = "bar-drop-cont" href="index.html">Community Benefits</a></li>
+          <li><a class = "bar-drop-cont" href="https://tda.com/connect/">Connect</a> 
         </ul>
-      </div>
+    </div>
   </header>
   <div class="main-content">
     <div id="pro-title">
       <h1>3D Printed Engineered Structures for High Performance Direct Air Capture System</h1>
-      <hr id="partial-hr-1">
+      <hr class="partial-hr-1">
       <br>
       <p class="contract-num">Contract Number
         : DE-FEE0032260</p>
@@ -126,7 +127,7 @@
       <h3>Our Partners</h3>
       <ul class="partners">
         <li class="partners-list">University of Miami
-          <a href="https://welcome.miami.edu/"><img id="must-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS427TZv6InQOnNLmXxK2f4y5wXQRgOiRAKhAAlg9n8Xg&s"></a>
+          <a href="https://welcome.miami.edu/"><img id="must-logo"  alt = "University of Miami Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS427TZv6InQOnNLmXxK2f4y5wXQRgOiRAKhAAlg9n8Xg&s"></a>
           <br>
           <p class="partner-des">UM has committed to increasing the participation of underrepresented groups in STEM,
             and will utilize Student Diversity, Outreach, and Women's Program at the University of Miami to recruit and
@@ -134,7 +135,7 @@
         </li>
 
         <li class="partners-list">SLB
-          <a href="https://www.slb.com/"><img id="slb-logo"
+          <a href="https://www.slb.com/"><img id="slb-logo" alt = "SLB Logo"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/SLB_Logo_2022.svg/768px-SLB_Logo_2022.svg.png?20221025102909"></a>
           <br>
           <p class="partner-des">SLB believes that one of its greatest strengths is the diversity of their workforce,
@@ -147,7 +148,7 @@
     </div>
     <div id="deia-milestones">
       <h2>Milestones Table - High School</h2>
-      <hr id="partial-hr-1">
+      <hr class="partial-hr-1">
       <br>
       <table id="smart-id-table">
         <tr>
@@ -204,8 +205,8 @@
             <h4>Goal Description</h4>
             <p>Increase the diversity of the intern applicant pool.</p>
             <h4 class = "cur-prog-title">Current Progress</h4>
-            <div id = "cur-prog-cont">
-              <ul id="cur-prog-list">
+            <div class = "cur-prog-cont">
+              <ul class = "cur-prog-list">
                 <li>
                   <div class = "cur-act-title"> Job Postings </div>
                   <p>We listed job postings for several interns:</p>
@@ -409,8 +410,8 @@
             <h4>Goal Description</h4>
             <p>At least one project researcher will be from underrepresented groups in STEM.</p>
             <h4 class = "cur-prog-title">Current Progress</h4>
-            <div id = "cur-prog-cont">
-              <ul id="cur-prog-list">
+            <div class = "cur-prog-cont">
+              <ul class = "cur-prog-list">
                 <li>
                   <div class = "cur-act-title"> Tracking diversity at TDA </div>
                   <p>We met with TDA’s Human Resources and Accounting personnel to get information about TDA’s current diversity and setup methods for tracking diversity.  This included tracking diversity of the current staff and applicant pools.  In addition, we are tracking labor and expenses spent on the CBP activities by adding separate charge codes for these activities.  </p>
@@ -444,8 +445,8 @@
             <h4>Goal Description</h4>
             <p>DEIA efforts will be shared at a meeting of the Society of Hispanic Professional Engineers (SHPE), or the National Society of Black Engineers annual convention.</p>
             <h4 class = "cur-prog-title">Current Progress</h4>
-            <div id = "cur-prog-cont">
-              <ul id="cur-prog-list">
+            <div class = "cur-prog-cont">
+              <ul class = "cur-prog-list">
                 <li>
                   <div class = "cur-act-title">Reworking Goal </div>
                   <p>We found that both the SHPE and the NSBE annual conventions do not have technical talks.  We also do not have a Hispanic or black project member.  So, we decided to send project members to the American Chemical Society Conference which is in Denver this fall.</p>
@@ -460,8 +461,8 @@
             <h4>Goal Description</h4>
             <p>The results of this project will be shared at a local school. This workshop will use elements of the research project to promote STEM.</p>
             <h4 class = "cur-prog-title">Current Progress</h4>
-            <div id = "cur-prog-cont">
-              <ul id="cur-prog-list">
+            <div class = "cur-prog-cont">
+              <ul class = "cur-prog-list">
                 <li>
                   <div class = "cur-act-title"> Arvada West Highschool Seminar</div>
                   <p>We selected Arvada West High School in nearby Arvada which is located in a disadvantaged community.  The community is disadvantaged due to low income, traffic proximity and volume, proximity to a superfund site, wastewater discharge and lack of high school education.</p>
@@ -478,7 +479,7 @@
   <footer id="copyright">
     <div id="copy">
       Copyright © 2016-2024 All Rights Reserved. |
-      <span style="line-height: 1.5">12345 W. 52nd Avenue, </span>
+      <span id = "line-bot">12345 W. 52nd Avenue, </span>
       Wheat Ridge, CO 80033-1916
     </div>
   </footer>
