@@ -104,7 +104,7 @@ h3 {
 }
 #bar-but{
   position: absolute;
-  top:20px;
+  top:10px;
   display: none;
   list-style-type: none;
 }
@@ -113,7 +113,6 @@ h3 {
   color: white;
   font-size: 50px;
   border:none;
-  display:block;
   cursor:pointer;
 }
 #bar-drop-links{

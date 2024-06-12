@@ -7,6 +7,11 @@ var countClicks = [0,0,0,0,0]; //Counts clicks for separate buttons (sometimes i
 var disWidth = 1350; // Width that the nav bar will be changed at
 var dropDownMenu = false; //Used to stop the dropdown menu disappearing during resizing
 
+document.getElementById("sub-list-1").style.display = "none";
+document.getElementById("sub-list-2").style.display = "none";
+document.getElementById("sub-list-3").style.display = "none";
+document.getElementById("sub-list-4").style.display = "none";
+
 function fireFoxAdjuster(){
   if(navigator.userAgent.includes("Firefox")){ // Checks if the browser is Firefox (not entirely reliable as people can get around it if they want)
     var elements = document.querySelectorAll('.cur-prog-title'); //Changes position of the words "current progress"
@@ -53,10 +58,7 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
     document.getElementById("bar-drop-links").style.display = "block";
-    document.getElementById("sub-list-1").style.display = "none";
-    document.getElementById("sub-list-2").style.display = "none";
-    document.getElementById("sub-list-3").style.display = "none";
-    document.getElementById("sub-list-4").style.display = "none";
+    navBut.style.left= window.innerWidth -100 + "px";
     dropDownMenu = true;
     navScroll();
   }
@@ -82,11 +84,10 @@ function subNavDropDown(spec){ //Activates the sub menus on the dropdown nav bar
   navScroll();
 }
 function topBarChange(){ //Changes the nav bar mode depending on what size the window is
-  console.log(window.innerWidth)
+  navBut.style.left= window.innerWidth -100 + "px";
   if(window.innerWidth < disWidth && !dropDownMenu ){ // Hides if to small
     barList.style.display = "none";
     navBut.style.display = "block";
-    navBut.style.left= window.innerWidth -100 + "px";
 }
   else if(window.innerWidth >= disWidth && !dropDownMenu ){ //Reveals if large enough
     barList.style.display = "block";
