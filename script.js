@@ -82,9 +82,11 @@ function subNavDropDown(spec){ //Activates the sub menus on the dropdown nav bar
   navScroll();
 }
 function topBarChange(){ //Changes the nav bar mode depending on what size the window is
+  console.log(window.innerWidth)
   if(window.innerWidth < disWidth && !dropDownMenu ){ // Hides if to small
     barList.style.display = "none";
     navBut.style.display = "block";
+    navBut.style.left= window.innerWidth -100 + "px";
 }
   else if(window.innerWidth >= disWidth && !dropDownMenu ){ //Reveals if large enough
     barList.style.display = "block";

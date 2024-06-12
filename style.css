@@ -103,11 +103,8 @@ h3 {
   z-index: 10;
 }
 #bar-but{
-  float:right;
-  position: relative;
-  left:10px;
-  top:10px;
-  margin: 10px 40px 0px 0px;
+  position: absolute;
+  top:20px;
   display: none;
   list-style-type: none;
 }
@@ -247,7 +244,7 @@ footer {
   margin:auto;
   margin-top: 35px;
   margin-bottom:30px;
-  width: 360px;
+  width: 50%;
 }
 #line-bot{
   line-height: 1.5;
@@ -388,7 +385,7 @@ th {
 }
 
 #buzz-tb {
-  width: 400px;
+  width: 75%;
   min-height: 500px;
   overflow: hidden;
 }
