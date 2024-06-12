@@ -53,7 +53,8 @@ function navScroll(){
 }
 function navDropDown(){ //Changes all of the elements that have to do with the nav bar dropping down
   if (countClicks[0] % 2 == 0){ //Activates Dropdown
-    bar.style.height = window.innerHeight + 1 + "px";
+    bar.style.height = window.innerHeight + 10 + "px";
+    barList.style.marginBottom = 20 + "px";
     document.getElementById("tda-logo").style.display = "none";
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
@@ -64,8 +65,9 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
   }
   else if (countClicks[0] % 2 == 1){//Deactivates Dropdown
     bar.style.height =  100 + "px";
-    document.getElementById("tda-logo").style.display = "";
-    document.getElementById("copyright").style.display = "";
+    barList.style.marginBottom = 0 + "px";
+    document.getElementById("tda-logo").style.display = "block";
+    document.getElementById("copyright").style.display = "block";
     document.getElementById("bar-but-cont").innerHTML = "&#8801;";
     document.getElementById("bar-drop-links").style.display = "none";
     dropDownMenu = false;

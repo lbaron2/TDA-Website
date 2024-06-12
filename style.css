@@ -92,7 +92,7 @@ h3 {
 #bar-list {
   list-style-type: none;
   position: relative;
-  bottom: 15px;
+  bottom:15px;
 }
 .bar-cont {
   float: right;
@@ -556,10 +556,5 @@ th {
   }
   td{
     font-size: 18px;
-  }
-}
-@media screen and (max-height: 750px) {
-  .bar-cont{
-    line-height: 50px;
   }
 }
