@@ -109,7 +109,7 @@ h3 {
   list-style-type: none;
 }
 #bar-but-cont{
-  background-color: #1e164b;
+  background-color: #1e164b00;
   color: white;
   font-size: 50px;
   border:none;
@@ -134,15 +134,41 @@ h3 {
   color: #076ba7;
 }
 
-#tda-logo {
+.tda-logo {
   position: absolute;
   top: 20%;
   left:40px;
+  transition: opacity 0.5s ease-out;
 }
 
-#tda-logo-img {
-  height: 50px;
-  width: auto;
+#tda-logo-img-1 {
+  height: min-content;
+  width: 80px;
+  z-index: 20;
+}
+#tda-logo-img-2 {
+  height: min-content;
+  width: 80px;
+  top: 18%;
+  opacity: 0;
+  z-index: 19;
+}
+@keyframes tda-animation {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.tda-animation{
+  animation-name: tda-animation;
+  animation-duration: 0.75s;
+}
+.tda-animation-dim{
+  animation-name: tda-animation;
+  animation-duration: 0.75s;
+}
+.tda-animation-wake{
+  animation-name: tda-animation;
+  animation-duration: 0.75s;
+  animation-direction: reverse;
 }
 /* Nav Sub Menus */
 .sub-drop-down{
@@ -172,10 +198,12 @@ h3 {
   display: none;
   padding-bottom: 15px;
   float: right;
-  position: relative;
-  top:80px;
-  left:100px;
+  position: absolute;
+  top:99px;
   z-index: 5;
+}
+.hover-taller{
+  top:59px;
 }
 .hoverable:hover .hover-sub-menu{
   padding-top: 20px;
@@ -193,24 +221,16 @@ h3 {
   font-size: 12px;
 }
 #hover-sub-menu-1{
-  position: absolute;
   left:350px;
-  top:99px;
 }
 #hover-sub-menu-2{
-  position: absolute;
   left:500px;
-  top:99px;
 }
 #hover-sub-menu-3{
-  position: absolute;
   left:600px;
-  top:99px;
 }
 #hover-sub-menu-4{
-  position: absolute;
   left:1000px;
-  top:99px;
 }
 /*Footer*/
 footer {

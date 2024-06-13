@@ -2,12 +2,12 @@ var coll = document.getElementsByClassName("collapsible"); //Grabs all elements 
 var navBut = document.getElementById("bar-but"); // Grabs the button in the top left
 var barList = document.getElementById("bar-list") // Grabs the list of links on the nav bar
 var bar = document.getElementById("bar"); //Grabs the too bar
-var i; //Counter Variable
+
 var countClicks = [0,0,0,0,0]; //Counts clicks for separate buttons (sometimes if you click to fast it breaks buttons, so this is my way around it )
 var disWidth = 1350; // Width that the nav bar will be changed at
-var dropDownMenu = false; //Used to stop the dropdown menu disappearing during resizing
+var dropDownMenu = false, logoTran = true, bigger = false, smaller = false; //Used to stop the dropdown menu disappearing during resizing
 
-document.getElementById("sub-list-1").style.display = "none";
+document.getElementById("sub-list-1").style.display = "none"; //Makes sure none of the menus are initially open;
 document.getElementById("sub-list-2").style.display = "none";
 document.getElementById("sub-list-3").style.display = "none";
 document.getElementById("sub-list-4").style.display = "none";
@@ -30,7 +30,8 @@ window.addEventListener('resize', topBarChange);  //Runs the top bar change func
 if (window.innerWidth < disWidth){ // Checks what mode the bar should initially be in
   topBarChange();
 }
-for (i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
+
+for (var i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
@@ -43,25 +44,27 @@ for (i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
   });
 }
 
-function navScroll(){
-  if(window.innerHeight < document.getElementById("drop-down-links").offsetHeight){ //If the drop down menu is too big for the screen it can now be scrolled
+function subNavScroll(){//If the drop down menu is too big for the screen it can now be scrolled
+  if(window.innerHeight < document.getElementById("drop-down-links").offsetHeight){ 
     bar.style.overflowY = "scroll";
   }
   else{
     bar.style.overflowY = "hidden";
   }
 }
+
 function navDropDown(){ //Changes all of the elements that have to do with the nav bar dropping down
   if (countClicks[0] % 2 == 0){ //Activates Dropdown
     bar.style.height = window.innerHeight + 10 + "px";
     barList.style.marginBottom = 20 + "px";
-    document.getElementById("tda-logo").style.display = "none";
+    document.getElementById("tda-logo-img-1").style.display = "none";
+    document.getElementById("tda-logo-img-2").style.display = "none";
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
     document.getElementById("bar-drop-links").style.display = "block";
     navBut.style.left= window.innerWidth -100 + "px";
     dropDownMenu = true;
-    navScroll();
+    subNavScroll();
   }
   else if (countClicks[0] % 2 == 1){//Deactivates Dropdown
     bar.style.height =  100 + "px";
@@ -70,11 +73,13 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
     document.getElementById("copyright").style.display = "block";
     document.getElementById("bar-but-cont").innerHTML = "&#8801;";
     document.getElementById("bar-drop-links").style.display = "none";
+    logoChange();
     dropDownMenu = false;
   }
      
   countClicks[0] +=1;//There to make sure if you click it a bunch it doesn't break (main website does)
 }
+
 function subNavDropDown(spec){ //Activates the sub menus on the dropdown nav bar
   if(countClicks[spec] % 2 == 0){ // Activates submenu
     document.getElementById("sub-list" + "-" + spec).style.display = "";
@@ -83,8 +88,10 @@ function subNavDropDown(spec){ //Activates the sub menus on the dropdown nav bar
     document.getElementById("sub-list" + "-" + spec).style.display = "none";
   }
   countClicks[spec] +=1; //There to make sure if you click it a bunch it doesn't break (main website does)
-  navScroll();
+  subNavScroll(); //Changes scroll behavior to fit situation 
+  shrinkNav();//Checks what state the bar should be in (normal or shrunk)
 }
+
 function topBarChange(){ //Changes the nav bar mode depending on what size the window is
   navBut.style.left= window.innerWidth -100 + "px";
   if(window.innerWidth < disWidth && !dropDownMenu ){ // Hides if to small
@@ -95,5 +102,59 @@ function topBarChange(){ //Changes the nav bar mode depending on what size the w
     barList.style.display = "block";
     navBut.style.display = "none";
   }
-
 }
+function logoChange(){
+  const fadeIn = [
+    {opacity: 0},
+    {opacity: 1},
+  ];
+  const timing = {
+    duration: 500,
+    iterations: 1,
+  };
+
+  var smLogo = document.getElementById("tda-logo-img-2").animate(fadeIn,  timing);
+  var bgLogo = document.getElementById("tda-logo-img-1").animate(fadeIn, timing);
+  smLogo.pause();
+  bgLogo.pause();
+
+  if(smaller){//Changes from small to big logo
+    smLogo.play();
+    bgLogo.reverse();
+    smaller = false;
+  }
+  else if(bigger){//Changes from big to small logo
+    bgLogo.play();
+    smLogo.reverse();
+    bigger = false;
+  }
+ 
+}
+window.addEventListener("scroll", shrinkNav);
+function shrinkNav(){ // Shrinks the nav bar to 
+  if(window.scrollY > 150 && !dropDownMenu){ //Shrunken State
+    bar.style.height = 60 + "px";
+    barList.style.bottom = 35 + "px";
+    navBut.style.top = 0;
+    bigger = true;
+    
+    var elements = document.querySelectorAll('.hover-sub-menu'); //Moves the hover menus with the bar
+    elements.forEach(element => { 
+      element.classList.add("hover-taller")
+    });
+  }
+  else if (window.scrollY <= 150 && !dropDownMenu){ // Normal Size
+    bar.style.height = 100 + "px";
+    navBut.style.top = 10 + "px";
+    barList.style.bottom = 15 + "px";
+    smaller = true;
+
+    var elements = document.querySelectorAll('.hover-sub-menu');
+    elements.forEach(element => { //Moves the hover menus with the bar
+      element.classList.remove("hover-taller")
+      
+    });
+  }
+    logoChange()
+}
+
