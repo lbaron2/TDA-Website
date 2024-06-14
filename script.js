@@ -119,7 +119,7 @@ function logoChange(){
 
 window.addEventListener("scroll", shrinkNav);
 function shrinkNav(){ // Shrinks the nav bar to 
-  if(window.scrollY > 150 && !dropDownMenu){ //Shrunken State
+  if(window.scrollY > 170 && !dropDownMenu){ //Shrunken State
     bar.style.height = 60 + "px";
     barList.style.bottom = 35 + "px";
     navBut.style.top = 0 + "px";
@@ -130,7 +130,7 @@ function shrinkNav(){ // Shrinks the nav bar to
       element.classList.add("hover-taller")
     });
   }
-  else if (window.scrollY <= 150 && !dropDownMenu){ // Normal Size
+  else if (window.scrollY <= 130 && !dropDownMenu){ // Normal Size
     bar.style.height = 100 + "px";
     navBut.style.top = 10 + "px";
     barList.style.bottom = 15 + "px";
