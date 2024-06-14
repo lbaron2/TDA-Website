@@ -136,7 +136,7 @@ h3 {
 
 .tda-logo {
   position: absolute;
-  top: 20%;
+  top: 0px;
   left:40px;
   transition: opacity 0.5s ease-out;
 }
@@ -145,13 +145,15 @@ h3 {
   height: min-content;
   width: 80px;
   z-index: 20;
+  top: 20px;
 }
 #tda-logo-img-2 {
   height: min-content;
   width: 80px;
-  top: 18%;
-  opacity: 0;
-  z-index: 19;
+  opacity: 0; 
+}
+#lower-logo{
+  top:20px;
 }
 @keyframes tda-animation {
   0% {opacity: 1;}
@@ -159,7 +161,7 @@ h3 {
 }
 .tda-animation{
   animation-name: tda-animation;
-  animation-duration: 0.75s;
+  animation-duration: 0.01s;
 }
 .tda-animation-dim{
   animation-name: tda-animation;

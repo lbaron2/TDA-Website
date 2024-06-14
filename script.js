@@ -104,32 +104,21 @@ function topBarChange(){ //Changes the nav bar mode depending on what size the w
   }
 }
 function logoChange(){
-  const fadeIn = [
-    {opacity: 0},
-    {opacity: 1},
-  ];
-  const timing = {
-    duration: 500,
-    iterations: 1,
-  };
+ var smLogo = document.getElementById("tda-logo-img-2");
+ var bgLogo = document.getElementById("tda-logo-img-1");
 
-  var smLogo = document.getElementById("tda-logo-img-2").animate(fadeIn,  timing);
-  var bgLogo = document.getElementById("tda-logo-img-1").animate(fadeIn, timing);
-  smLogo.pause();
-  bgLogo.pause();
-
-  if(smaller){//Changes from small to big logo
-    smLogo.play();
-    bgLogo.reverse();
+ if(smaller){//Changes from small to big logo
+    smLogo.style.opacity =  "0";
+    bgLogo.style.opacity = "1"
     smaller = false;
   }
   else if(bigger){//Changes from big to small logo
-    bgLogo.play();
-    smLogo.reverse();
+    bgLogo.style.opacity = "0";
+    smLogo.style.opacity = "1"
     bigger = false;
   }
- 
 }
+
 window.addEventListener("scroll", shrinkNav);
 function shrinkNav(){ // Shrinks the nav bar to 
   if(window.scrollY > 150 && !dropDownMenu){ //Shrunken State
