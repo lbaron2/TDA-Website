@@ -36,7 +36,7 @@ for (var i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
-      content.style.maxHeight = null;
+      content.style.maxHeight = "0px";
     } 
     else {
       content.style.maxHeight = content.scrollHeight + "px";
@@ -57,24 +57,23 @@ function navDropDown(){ //Changes all of the elements that have to do with the n
   if (countClicks[0] % 2 == 0){ //Activates Dropdown
     bar.style.height = window.innerHeight + 10 + "px";
     barList.style.marginBottom = 20 + "px";
-    document.getElementById("tda-logo-img-1").style.display = "none";
-    document.getElementById("tda-logo-img-2").style.display = "none";
+    document.getElementById("tda-logo-img-1").style.opacity = "0";
+    document.getElementById("tda-logo-img-2").style.opacity = "0";
     document.getElementById("copyright").style.display = "none";
     document.getElementById("bar-but-cont").innerHTML = "X";
     document.getElementById("bar-drop-links").style.display = "block";
-    navBut.style.left= window.innerWidth -100 + "px";
+    navBut.style.left= window.innerWidth -60 + "px";
     dropDownMenu = true;
     subNavScroll();
   }
   else if (countClicks[0] % 2 == 1){//Deactivates Dropdown
     bar.style.height =  100 + "px";
     barList.style.marginBottom = 0 + "px";
-    document.getElementById("tda-logo").style.display = "block";
     document.getElementById("copyright").style.display = "block";
     document.getElementById("bar-but-cont").innerHTML = "&#8801;";
     document.getElementById("bar-drop-links").style.display = "none";
-    logoChange();
     dropDownMenu = false;
+    shrinkNav();
   }
      
   countClicks[0] +=1;//There to make sure if you click it a bunch it doesn't break (main website does)
@@ -89,11 +88,10 @@ function subNavDropDown(spec){ //Activates the sub menus on the dropdown nav bar
   }
   countClicks[spec] +=1; //There to make sure if you click it a bunch it doesn't break (main website does)
   subNavScroll(); //Changes scroll behavior to fit situation 
-  shrinkNav();//Checks what state the bar should be in (normal or shrunk)
 }
 
 function topBarChange(){ //Changes the nav bar mode depending on what size the window is
-  navBut.style.left= window.innerWidth -100 + "px";
+  navBut.style.left= window.innerWidth -60 + "px";
   if(window.innerWidth < disWidth && !dropDownMenu ){ // Hides if to small
     barList.style.display = "none";
     navBut.style.display = "block";
@@ -124,7 +122,7 @@ function shrinkNav(){ // Shrinks the nav bar to
   if(window.scrollY > 150 && !dropDownMenu){ //Shrunken State
     bar.style.height = 60 + "px";
     barList.style.bottom = 35 + "px";
-    navBut.style.top = 0;
+    navBut.style.top = 0 + "px";
     bigger = true;
     
     var elements = document.querySelectorAll('.hover-sub-menu'); //Moves the hover menus with the bar
@@ -141,7 +139,6 @@ function shrinkNav(){ // Shrinks the nav bar to
     var elements = document.querySelectorAll('.hover-sub-menu');
     elements.forEach(element => { //Moves the hover menus with the bar
       element.classList.remove("hover-taller")
-      
     });
   }
     logoChange()
