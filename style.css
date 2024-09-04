@@ -449,6 +449,11 @@ th {
   font-size: 15px;
 }
 
+.round{
+  border-radius:25px;
+  margin-bottom: 10px;
+}
+
 .collapsible:hover {
   background-color: #40309c;
 }

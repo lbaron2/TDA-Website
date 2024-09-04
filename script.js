@@ -33,14 +33,22 @@ if (window.innerWidth < disWidth){ // Checks what mode the bar should initially 
 
 for (var i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
     var content = this.nextElementSibling;
-    if (content.style.maxHeight){
+    
+    if (content.classList.contains("active")){
       content.style.maxHeight = "0px";
     } 
     else {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
+    let parentDropDown = this.parentNode.parentNode.parentNode;
+    let parentClassList = Array.from(parentDropDown.classList);
+    if(parentClassList.includes("col-cont")){
+      parentDropDown.style.maxHeight = parentDropDown.scrollHeight +  content.scrollHeight + "px";
+    }
+    this.classList.toggle("active");
+    content.classList.toggle("active");
+
   });
 }
 
