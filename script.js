@@ -37,15 +37,22 @@ for (var i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
     
     if (content.classList.contains("active")){
       content.style.maxHeight = "0px";
+      content.parentNode.children[0].children[0].textContent = "+";
+      content.parentNode.children[0].children[0].style.bottom = "30px";
     } 
     else {
       content.style.maxHeight = content.scrollHeight + "px";
+      content.parentNode.children[0].children[0].textContent = '_';
+      content.parentNode.children[0].children[0].style.bottom = "45px";
     } 
     let parentDropDown = this.parentNode.parentNode.parentNode;
     let parentClassList = Array.from(parentDropDown.classList);
     if(parentClassList.includes("col-cont")){
       parentDropDown.style.maxHeight = parentDropDown.scrollHeight +  content.scrollHeight + "px";
     }
+    
+    console.log(content.parentNode.children[0].children[0].textContent);
+
     this.classList.toggle("active");
     content.classList.toggle("active");
 

@@ -447,6 +447,8 @@ th {
   text-align: left;
   outline: none;
   font-size: 15px;
+  display: inline;
+  height: 50px;
 }
 
 .round{
@@ -458,15 +460,15 @@ th {
   background-color: #40309c;
 }
 
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 13px;
-  float: right;
-  margin-left: 5px; 
-}
 
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+.plus-minus{
+  position: relative;
+  bottom: 30px;
+  height: 10px;
+  font-size: 25px;
+  float: right;
+  font-weight: 540;
+  color:#785dc8;
 }
 
 .col-cont {
