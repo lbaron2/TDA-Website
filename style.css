@@ -360,6 +360,12 @@ footer {
   position: relative;
   top:20px;
 }
+#BKS-logo{
+  width:auto;
+  height: 60px;
+  position: relative;
+  top:20px;
+}
 /*DEIA Table*/
 table {
   border: 1px solid black;
