@@ -1,0 +1,67 @@
+{% extends "footer.html" %}
+{% block mainContent%}
+{{ super() }}
+<div class="main-content">
+  <div id= "contact-cbp-top-text">
+    <p id = "contact-cbp-cont">Please contact us at <a id="contact-us-bar" href="mailto:communitybenefits@tda.com?">communitybenefits@tda.com</a>, see the form below as well.<p>
+  </div>
+  <div id="projects">
+    <h1>Community Benefits Plan (CBP) Projects</h1>
+    <hr class = "partial-hr-1">
+    <hr class = "hidden-hr">
+    <p>Each project has its own page, detailing how it plans on helping the community and how the impact will be measured. Click on the project name below for more details on that specific plan.</p>
+  </div>
+  <div>
+    <ul id="pro-list">
+      <li class = "spacing-bottom-links"><a href="3D-DAC.html" class="pro-link">3D Printed Engineered Structures for High Performance Direct Air
+          Capture System
+        </a></li>
+      <li class = "spacing-bottom-links"><a href="Coated-Hex.html" class="pro-link">Advanced Engineered Structures for High Performance Direct Air
+          Capture System
+        </a></li>
+      <li class = "spacing-bottom-links"><a href="Air-Sep.html" class="pro-link">Advanced Air Separation Unit (ASU) for Low-Cost H<sub>2</sub> Production Via
+          Modular Gasification
+        </a></li>
+      <li class = "spacing-bottom-links"><a href="DACtoMeOH.html" class="pro-link">Efficient Integrated Methanol Synthesis Using Carbon from
+          Direct Air Capture
+        </a></li>
+        <li class = "spacing-bottom-links" id="end"><a href="DAC-Plant.html" class="pro-link">Carbon Capture Pilot at Dry Fork Power Station
+        </a></li>
+    </ul>
+  </div>
+  <div id="buzz">
+    <a id="buzz-title" href="buzz.html">
+      <h1>Acronym Sheet</h1>
+    </a>
+    <hr class="partial-hr-1">
+    <hr class = "hidden-hr">
+    <p><a href = "buzz.html">Click here</a> for acronyms that will be used across the CBP projects.</p>
+  </div>
+  <div id = "contact-form-email">
+    <h1>Contact Form</h1>
+    <hr class = "partial-hr-1">
+    <hr class = "hidden-hr">
+    <p>Give us your feedback about any of these projects- please reach out!</p>
+    <div id = "contact-form">
+      <form id="form" action="mailto:communitybenefits@tda.com?">
+        <div id = "name-bar">
+          <input class ="text-bar" type="text" placeholder="Your Name" name="Name" autocomplete="name" required />
+        </div>
+        <!-- <div id = "email-bar" >
+          <input class ="text-bar" type="text" placeholder="Email" name="email" autocomplete="email" required />
+        </div> -->
+        <div id = "message-bar">
+          <textarea  type="body" id ="text-bar-large" placeholder="Message" name="Message" required autocomplete="off"></textarea>
+        </div>
+        <div id = "date">
+          <input title= "don't type here"name="date" class="visually-hidden" tabindex="-1" autocomplete="off">
+        </div>
+        <div id = "submit">
+          <button id="sub-but" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block title%}CBP{% endblock %}
