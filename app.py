@@ -10,9 +10,9 @@ mimetypes.add_type('text/html', '.html')
 app = Flask(__name__, template_folder=r'templates', static_folder=r"static") #says app is a flask server
 
 @app.route("/")
-@app.route("/index.html")
+@app.route("/community-benefits-projects.html")
 def index():
-    return render_template("index.html")
+    return render_template("community-benefits-projects.html")
 
 @app.route("/3D-DAC.html")
 def printedDAC():
