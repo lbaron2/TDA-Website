@@ -518,9 +518,19 @@ th {
   border-radius: 25px;
   line-height: 40px;
 }
-#contact-cbp-top-text{
+#top-items{
+  display: inline;
   position: relative;
   top:10px;
+  width: 80%;
+  
+}
+#intro-para{
+  display: block;
+  width: 50%;
+}
+#contact-cbp{
+  display: block;
 }
 #form{
   background-color: #d5d5d5;
