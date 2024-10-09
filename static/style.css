@@ -523,11 +523,13 @@ th {
   position: relative;
   top:10px;
   width: 80%;
-  
+
 }
 #intro-para{
   display: block;
-  width: 50%;
+  position: relative;
+  top: 10px;
+  width: 60%;
 }
 #contact-cbp{
   display: block;
