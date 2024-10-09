@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import mimetypes
+from waitress import serve
 
 mimetypes.add_type('application/javascript', '.js')
 mimetypes.add_type('text/javascript', '.mjs')
@@ -38,5 +39,6 @@ def DACtoMeOH():
     return render_template("DACtoMeOH.html")
 
 if __name__ == '__main__':
-    app.run()
+    serve(app,listen=f"*:80",url_scheme='https')
+    # app.run()
 
