@@ -34,7 +34,7 @@ if (window.innerWidth < disWidth){ // Checks what mode the bar should initially 
 for (var i = 0; i < coll.length; i++) { //Current Progress Collapsibles (smooth)
   coll[i].addEventListener("click", function() {
     var content = this.nextElementSibling;
-    
+    console.log(content)
     if (content.classList.contains("active")){
       content.style.maxHeight = "0px";
       content.parentNode.children[0].children[0].textContent = "+";
