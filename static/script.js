@@ -159,3 +159,9 @@ function shrinkNav(){ // Shrinks the nav bar to
     logoChange()
 }
 
+function popUp(){
+  let pop = document.createElement("div");
+
+  pop.classList.add("box");
+
+}
