@@ -14,12 +14,13 @@ body {
   z-index: 1;
 }
 .main-content{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 #end {
   position: relative;
 }
+
 h1 {
   font-size: 36px;
   font-weight: 25;
@@ -99,7 +100,7 @@ h3 {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  margin-right: 60px;
+  margin-right: 50px;
   z-index: 10;
 }
 #bar-but{
@@ -511,7 +512,8 @@ th {
 }
 
 /* Contact Form */
-#contact-cbp-cont{
+#contact-cbp-cont,
+#cab-cbp-cont{
   float:right;
   padding-left: 10px;
   background-color:#d5d5d5;
@@ -531,7 +533,8 @@ th {
   top: 10px;
   width: 55%;
 }
-#contact-cbp{
+#contact-cbp,
+#cab-cbp{
   display: block;
 }
 #form{
@@ -605,6 +608,7 @@ th {
     font-size: 18px;
   }
 }
-#contact-us-bar{
+#contact-us-bar,
+#cab-bar{
   text-decoration: none;
 }
