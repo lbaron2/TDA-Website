@@ -165,3 +165,10 @@ function popUp(){
   pop.classList.add("box");
 
 }
+function CAB_redirect(){
+  console.log("Triggered");
+  document.location.href = "DAC-Plant.html";
+
+  window.scroll(0,400);
+}
+// CAB_redirect();
