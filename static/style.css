@@ -303,65 +303,7 @@ footer {
   font-size: 20px;
   font-weight: 10;
 }
-#slb-logo {
-  width: 60px;
-  height: auto;
-  position: relative;
-  top:10px;
-}
-
-#must-logo {
-  width: 60px;
-  height: auto;
-  position: relative;
-  top:20px
-}
-
-#gev-logo {
-  width: auto;
-  height: 40px;
-  position: relative;
-  top:10px;
-}
-
-#verde-logo {
-  width: auto;
-  height: 40px;
-  position: relative;
-  top:10px;
-}
-
-#uoa-logo {
-  width: auto;
-  height: 60px;
-  position: relative;
-  top:20px;
-}
-#ITC-logo{
-  width: auto;
-  height: 60px;
-  position: relative;
-  top:20px;
-}
-#UWYO-logo{
-  width:auto;
-  height: 60px;
-  position: relative;
-  top:20px;
-}
-#UCD-logo{
-  width:auto;
-  height: 60px;
-  position: relative;
-  top:20px;
-}
-#G2R-logo{
-  width:auto;
-  height: 60px;
-  position: relative;
-  top:20px;
-}
-#BKS-logo{
+.logo{  
   width:auto;
   height: 60px;
   position: relative;
@@ -467,7 +409,6 @@ th {
   background-color: #40309c;
 }
 
-
 .plus-minus{
   position: relative;
   bottom: 30px;
@@ -509,6 +450,11 @@ th {
 }
 .table-sub-cont{
   line-height: 20px;
+}
+.cur-img{
+  height: 400px;
+  width:auto;
+  position: relative;
 }
 
 /* Contact Form */
