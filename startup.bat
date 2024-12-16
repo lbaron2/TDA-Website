@@ -1,2 +1,2 @@
 @echo off
-start & c:/Users/lbaron/Documents/Website/Content_Files/.venv/Scripts/python.exe c:/Users/lbaron/Documents/Website/Content_Files/app.py
+start & c:/Users/TDAUser/Documents/TDA-Website/TDA-Website/.venv/Scripts/python.exe c:/Users/TDAUser/Documents/TDA-Website/TDA-Website/app.py
