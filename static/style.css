@@ -56,8 +56,8 @@ h3 {
   margin-bottom: -1px;
   visibility: hidden;
 }
-#pro-title {
-  position: relative;
+.pro-title {
+  font-weight: 100;
 }
 
 #proj-des-n-cbp {
@@ -272,22 +272,32 @@ footer {
   line-height: 1.5;
 }
 /*Project List*/
-.pro-link {
-  color: black;
-  font-size: 26px;
-  text-decoration: none;
+.pro-img{
+  width:400px;
+  height:450px;
+  border: #000000 1px solid;
 }
-.pro-link:hover {
-  color: #076ba7;
+#pro-list {
+  display:grid;
+  grid-template-columns: auto auto;
+  column-gap:150px;
+  row-gap:15px;
+}
+.pro-title{
+  text-decoration:none;
+  color:black;
+}
+.pro-title:hover {
+  cursor: pointer;
+}
+.pro-title span{
+  display: none;
+  position: relative;
+}
+.pro-title span:hover{
+  display: block;
 }
 
-#pro-list {
-  list-style-type: none;
-  vertical-align: middle;
-}
-#pro-list li{
-  margin-bottom: 15px;
-}
 /*Partners*/
 .partners {
   font-size: 26px;
@@ -460,7 +470,7 @@ th {
 /* Contact Form */
 #contact-cbp-cont,
 #cab-cbp-cont{
-  float:right;
+  float:left;
   padding-left: 10px;
   background-color:#d5d5d5;
   border-radius: 25px;
@@ -469,15 +479,15 @@ th {
 #top-items{
   display: inline;
   position: relative;
-  top:10px;
+  top:20px;
   width: 80%;
 
 }
 #intro-para{
   display: block;
   position: relative;
-  top: 10px;
-  width: 55%;
+  margin-bottom: 10px;
+  width: 100%;
 }
 #contact-cbp,
 #cab-cbp{
