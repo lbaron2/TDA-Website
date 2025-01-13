@@ -4,7 +4,7 @@ from waitress import serve
 
 mimetypes.add_type('application/javascript', '.js')
 mimetypes.add_type('text/css', '.css')
-mimetypes.add_type('text/html', '.html')
+mimetypes.add_type('text/html', '.html');
 
 app = Flask(__name__, template_folder=r'templates', static_folder=r"static") #says app is a flask server
 
