@@ -1,0 +1,10 @@
+.box{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.onload{
+    opacity: 1 !important;
+}
